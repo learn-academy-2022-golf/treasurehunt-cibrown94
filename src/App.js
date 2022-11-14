@@ -16,9 +16,12 @@ const App = () => {
   ])
 
   const handleGamePlay =(index)=>{
-    alert(index)
+    // alert(index)
+    let updatedBoard = [...board]
+    updatedBoard[index] = "🌳"
+    setBoard(updatedBoard)
   }
-
+// state will not allow you to modify anything in array 
   return (
     <>
       <h1>Treasure Hunt Game</h1>
